@@ -75,6 +75,9 @@ body {
   .input {
     width: 320px;
   }
+  .question {
+    width: 550px;
+  }
 }
 
 /* QUIZZ CSS */
@@ -96,6 +99,8 @@ body {
 }
 .question {
   margin: 10vh 0;
+  text-align: center;
+  width: 300px;
 }
 .content {
   background-color: #f7afaf;
