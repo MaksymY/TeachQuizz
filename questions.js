@@ -1,6 +1,6 @@
 const questionsTemplate = [
   {
-    question: "en quelle année a était crée le Javascript?",
+    question: "En quelle année a été créé le Javascript?",
     answers: [
       { letter: "a", answer: "2000" },
       { letter: "b", answer: "1995" },
@@ -10,17 +10,17 @@ const questionsTemplate = [
     correct: "b",
   },
   {
-    question: "quelle est le symbole de l'Ukraine?",
+    question: "quel est le symbole de l'Ukraine ?",
     answers: [
       { letter: "a", answer: "Le Kourka" },
       { letter: "b", answer: "Le Voron" },
       { letter: "c", answer: "La Lesia" },
-      { letter: "d", answer: "Le Tryzou" },
+      { letter: "d", answer: "Le Tryzoub" },
     ],
     correct: "d",
   },
   {
-    question: "a partir du Javascript peut ont styliser les élément du DOM?",
+    question: "À partir du Javascript, peut-on styliser les éléments du DOM ?",
     answers: [
       { letter: "a", answer: "Oui" },
       { letter: "b", answer: "Non" },

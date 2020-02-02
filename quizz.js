@@ -91,6 +91,7 @@ const finishQuiz = () => {
 
 const submitAnswer = () => {
   document.querySelector(".next").classList.remove("active");
+  setError("");
   if (selected) {
     const lastQuestion = questions.shift();
     lastQuestion.selected = selected;
@@ -103,7 +104,7 @@ const submitAnswer = () => {
       finishQuiz();
     }
   } else {
-    setError("You need to select answer.");
+    setError("Vous devez choisir une réponse !");
   }
 };
 
