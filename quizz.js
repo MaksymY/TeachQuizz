@@ -1,18 +1,26 @@
 let user, questions, answered, selected;
 
-console.log(questionsTemplate);
+let start = document.querySelector(".start");
+let inputUser = document.querySelector(".input[name=user]");
 
-const startGame = () => {
+inputUser.addEventListener("keydown", (event) => {
+  if (event.which == 13 || event.keyCode == 13) {
+    startGame();
+  }
+});
+
+start.addEventListener("click", startGame);
+
+function startGame() {
   const menu = document.querySelector(".menu");
-  const input = document.querySelector(".input[name=user]");
   const error = document.querySelector(".error");
 
-  if (input.value.length > 0) {
-    user = input.value;
+  if (inputUser.value.length > 0) {
+    user = inputUser.value;
     menu.style.display = "none";
     renderTemplate();
   } else error.textContent = "Veillez entrer un nom";
-};
+}
 
 const renderTemplate = () => {
   const quizGame = document.querySelector(".game");
